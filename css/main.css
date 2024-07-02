@@ -1,0 +1,128 @@
+ *{
+    padding: 0px;
+    margin: 0px;
+ }
+ 
+body{
+    background-color:#1E202B ;
+}
+
+
+ h1 {
+    font-size: 17px;
+    font-weight: 700;
+    color: aliceblue;
+    margin: 0;
+ }
+
+ .logo-info{
+    font-size: 10px;
+    color: #BFC1C8;
+ }
+
+nav{
+   background-color:#1E202B ;
+}
+
+
+ul li a{
+   color: aliceblue;
+   border: 2px solid transparent;
+  
+   border-radius: 25px;
+   transition: .1s;
+}
+
+ul li a:hover.border-link {
+   border: 2px solid #009AD8;
+   border-radius: 25px;
+   color: #009AD8;
+   
+}
+
+
+header {
+    margin: 0;
+    /* height: 50vh; */
+    background-image: url(../img/banner.png);
+    
+    background-position: top;
+   
+    background-repeat: no-repeat;
+    
+}
+
+.input-location{
+   background-color: rgb(30, 32, 43 );
+}
+ ::-webkit-input-placeholder{
+color:rgb(117, 117, 117);
+}
+
+
+.header-data{
+   
+   margin-bottom: 60px;
+   margin-top: 70px;
+}
+
+
+.today-data{
+   background-color: #323544;
+   
+}
+
+.title-today ,#title-after-tomorrow{
+   color:#BFC1C8;
+   background-color: #2D303D;
+}
+
+ 
+.header-today h4 ,#min-temperature-tomorrow ,#min-temperature-after-tomorrow{
+   color: #BFC1C8;
+   font-size: 20px;
+}
+
+.header-today span {
+   font-size: 80px;
+   font-weight: 700;
+   color: aliceblue;
+}
+
+.header-today p ,#weather-tomorrow ,#weather-after-tomorrow{
+   color: #009AD8;
+}
+
+.footer-today{
+   color:#BFC1C8 ;
+}
+
+.title-tomorrow{
+     color:#BFC1C8; 
+     background-color:#222531 ;
+}
+
+.tomorrow-data{
+   background-color:#262936 ;
+   /* padding-bottom: 120px; */
+}
+
+
+.footer-icon{
+
+padding: 15px;
+background-color:#1E202B ;
+   border-radius: 50%;
+   transition: .5s;
+}
+
+footer a i:hover {
+   padding: 15px;
+color: aliceblue;
+background-color: #0D6EFD;
+   border-radius: 50%;
+}
+
+footer{
+   background-color:#262936 ;
+}

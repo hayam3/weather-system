@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg p-4">
+    <div class="container-fluid  "  >
+      
+<a href="" class="navbar-brand  d-flex ms-md-5 ps-md-5 ">
+
+  <img class="" src="./img/logo.png" alt="logo">
+  <div class="ms-3">
+    <h1 class="">Weather</h1>
+    <span class="logo-info"> tagline goes here</span>
+  </div>
+
+</a>
+
+      <button class="navbar-toggler text-bg-primary rounded-circle p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class=" me-5  collapse navbar-collapse  position-relative" id="navbarNav">
+        <ul class=" navbar-nav list-unstyled d-flex  position-absolute end-0 ">
+          <li class="nav-item p-4 my-3">
+            <a class=" nav-active text-decoration-none border border-primary text-primary border-2 rounded-pill  px-4 py-1" href="#">Home</a>
+          </li>
+          <li class=" p-4 my-3">
+            <a class="text-decoration-none px-4 py-1 border-link" href="#">News</a>
+          </li>
+          <li class="nav-item p-4 my-3">
+            <a class="text-decoration-none px-4 py-1 border-link" href="#">Live  cameras</a>
+          </li>
+          <li class="nav-item p-4 my-3">
+            <a class="text-decoration-none px-4 py-1 border-link" href="#"> Photos</a>
+          </li>
+          <li class="nav-item p-4 my-3">
+            <a class="text-decoration-none px-4 py-1 border-link" href="#">Contact</a>
+          </li>
+        
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class=" ">
+
+    <div class=" w-75  pt-5 mx-auto  position-relative">
+      <input type="text" class=" input-location w-100 border-0 rounded-pill p-3 text-white " id="Location" placeholder="Find your Location">    
+
+      <button class="btn bg-primary rounded-pill py-2 m-auto position-absolute px-5 me-2 mt-1 top-50 end-0 text-light" id="btn">Find</button> 
+    </div>
+     
+
+<div class="header-data container    rounded-3 ">
+  <div class="row  " id="today-data">
+
+    <!--start today data ------------------------------------------------------>
+    <div class="today-data col-md-4   p-0 m-0 position-relative rounded-start">
+      <!-- title today -->
+      <div class=" title-today  d-flex justify-content-between  px-2 py-2 m-0  rounded-start">
+            <p class="my-auto" id="todayName">Tuesday</p>
+      
+                <div>
+                  <span id="todayNumber" class=" pe-1">25</span><span id="todayMonth" >June</span>
+                </div>
+      </div>
+       
+      
+      <!-- header today -->
+      <div class=" header-today mt-5 ps-3 pb-2">
+        <h4 id="cityName">hhh</h4>
+      
+      
+        <div class="my-3">
+          <span id="temperature"  class="temperature">25<sup>o</sup>C</span>
+        </div>
+      
+        <div    class="my-3">
+                <img src="./img/logo.png" class="z-3 " id="todayTempImg" alt="">
+        </div>
+      
+        <p id="todayTempText">Partly cloudy</p>
+      </div>
+      
+      
+      <!-- footer today -->
+      <div class="footer-today ps-3 pb-3">
+
+
+
+        <div class="d-inline-block"><img class="pe-1" src="./img/icon-umberella.png" alt=""></div><span  id="Humidity" class="pe-3">20%</span>
+        <div class="d-inline-block"><img class="pe-1" src="./img/icon-wind.png" alt=""></div><span id="Wind" class="pe-3" >18km/h</span>
+        <div class="d-inline-block"><img class="pe-1" src="./img/icon-compass.png" alt=""></div><span id="Compass" class="pe-3" >East</span>
+      </div> 
+      
+      </div>
+
+    <!--end today data ------------------------------------------------------>
+
+<!-- tomorrow data -->
+<div class="tomorrow-data col-md-4 p-0 ">
+
+<!-- title tomorrow -->
+<div class=" title-tomorrow px-2 py-2   text-center">
+  <p class="m-auto "  id="nextDayName">Thursday</p>
+</div>
+
+     <!-- header tomorrow -->
+
+    <div class="text-center pt-4">
+      <div class="my-3">
+        <img  id="nextDayImg" src="./img/113.png" alt="">
+    </div>
+  
+  <div class="my-3">
+    <span id="max-temperature-tomorrow" class="text-light fs-3 fw-medium" >45.2 <sup>o</sup>C</span>
+  </div>
+  
+  <div class="my-3">
+    <span id="min-temperature-tomorrow" >25.2 <sup>o</sup></span>
+  </div>
+
+  <p id="weather-tomorrow">Sunny</p>
+     </div>
+
+</div>
+
+
+        <!-- after tomorrow data -->
+
+<div class="today-data col-md-4  rounded-end p-0 ">
+<!-- title after tomorrow -->
+<div class="px-2 py-2 m-0   text-center rounded-end"  id="title-after-tomorrow">
+  <p class="m-auto " id="thirdDayName">Thursday</p>
+
+</div>
+
+     <!-- header after tomorrow -->
+
+  <div class="text-center pt-4 ">
+      <div   class="my-3">
+        <img id="thirdDayImg" src="./img/113.png" alt="">
+    </div>
+  
+  <div class="my-3">
+    <span id="max-temperature-after-tomorrow" class="text-light fs-3 fw-medium" >45.2 <sup>o</sup>C</span>
+  </div>
+  
+  <div class="my-3">
+    <span id="min-temperature-after-tomorrow" >25.2 <sup>o</sup></span>
+  </div>
+
+  <p id="weather-after-tomorrow">Sunny</p>
+  </div>
+
+</div>
+
+
+
+  </div>
+</div>
+  </header>
+ 
+
+  <footer class="">
+
+<div class="container">
+  <div class="row  ">
+    <div class="col-md-8">
+
+      <div class="   pt-5   my-3 position-relative ">
+        <input type="text" class=" input-location w-100 border-0 rounded-pill p-3 " id="Location" placeholder="Enter your email to subscribe...">    
+  
+        <button class="btn bg-primary rounded-pill py-2 position-absolute px-3 me-2 my-2  end-0 text-light">subscribe</button> 
+  
+       
+      </div>
+  
+
+    </div>
+    <div class="col-md-4 d-flex  justify-content-md-center ">
+
+      <div class="  p-md-5  position-absolute">
+        <a href=""><i class=" fs-6 px-3 footer-icon fa-brands fa-facebook-f"></i></a>
+  
+        <a href="#"><i class=" fs-6 px-3 footer-icon fa-brands fa-twitter"></i></a>
+  
+        <a href="#"><i class=" fs-6 px-3 footer-icon fa-brands fa-google-plus-g"></i></a>
+  
+        <a href="#"><i class=" fs-6 px-3 footer-icon  fa-brands fa-pinterest"></i></a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<p class=" footer-today my-0 py-5 ms-3  "> Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+    
+  </footer>
+
+  
+
+ 
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/js.js"></script>
+</body>
+</html>
